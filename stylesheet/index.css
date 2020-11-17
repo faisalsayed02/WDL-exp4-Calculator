@@ -1,0 +1,153 @@
+body {
+    font-family: 'Sirin Stencil', cursive;
+    background-color: white;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#calculator {
+    width: 320px;
+    height: 540px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
+}
+
+#result {
+    height: 120px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+#keyboard button {
+    font-family: 'Sirin Stencil', cursive;
+}
+
+.operator,
+.number {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number {
+    color: white;
+    background-color: black;
+}
+
+.operator {
+    color: white;
+    background-color: black;
+}
+
+.number,
+.operator {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.operator:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(149, 198, 218);
+}
+
+.number:hover {
+    color: rgba(245, 245, 245, 0.356);
+    box-shadow: 1px 1px 2px rgb(149, 198, 218), -1px -1px 2px rgb(149, 198, 218);
+}
+
+.operator:active {
+    font-size: 13px;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(149, 198, 218);
+}
+
+.number:active {
+    font-size: 13px;
+    box-shadow: 1px 1px 2px rgb(149, 198, 218), -1px -1px 2px rgb(149, 198, 218);
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+    outline: 0;
+}
+
+button:nth-child(2) {
+    color: red;
+}
+
+button:nth-child(1) {
+    font-size: 20px;
+    background-color: #b22020cc;
+}
+
+button:nth-child(1):hover {
+    color: #b22020cc;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(149, 198, 218), -1px -1px 2px rgb(149, 198, 218);
+}
+
+button:nth-child(1):active {
+    color: #b22020cc;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgb(149, 198, 218), -1px -1px 2px rgb(149, 198, 218);
+}
+
+button:nth-child(19) {
+    font-size: 20px;
+    background-color: #52a136;
+    width: 125px;
+    border-radius: 40px;
+}
+
+button:nth-child(19):hover {
+    color: black;
+    background-color: #b8f1a3;
+    box-shadow: none;
+}
+
+button:nth-child(19):active {
+    color: black;
+    background-color: #b8f1a3;
+    box-shadow: none;
+}
+
+#footer {
+    margin-top: -5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(78, 76, 76);
+}
